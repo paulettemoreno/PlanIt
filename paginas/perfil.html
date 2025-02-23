@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - PlanIt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>Perfil del Usuario</h2>
+        <p><strong>Correo registrado:</strong> <span id="userEmail"></span></p>
+        <a href="#" id="logoutBtn" class="btn btn-danger">Cerrar Sesión</a>
+    </div>
+
+    <script>
+        document.getElementById("userEmail").textContent = sessionStorage.getItem("userEmail") || "No hay usuario registrado.";
+    </script>
+
+</body>
+</html>
