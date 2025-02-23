@@ -11,6 +11,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     }
 
     sessionStorage.setItem("userEmail", email);
-    window.location.href = "perfil.html";
+    window.location.href = "events.html";
 });
 
